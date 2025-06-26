@@ -1,0 +1,116 @@
+ID_Venda,Data_Hora_Venda,SKU,Nome_Produto,Categoria,Valor_Unitario,Custo_Unitario,Quantidade,Desconto_Aplicado_Percent,ID_Cliente,Tipo_Cliente,ID_Vendedor,Nome_Vendedor,Filial,Canal_Venda,Metodo_Pagamento,Status_Venda
+V101,2025-06-01 10:22:15,CS-INV-CZ-M,Casaco de Inverno Cinza M,Vestuário Masculino,449.90,210.00,1,0.0,C101,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V102,2025-06-01 11:30:45,CM-PL-BR-P,Camisa Polo Branca P,Vestuário Masculino,149.90,75.00,2,0.1,C205,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,PIX,Concluída
+V103,2025-06-01 14:05:30,VT-LN-AZ-M,Vestido de Lã Azul M,Vestuário Feminino,349.90,160.00,1,0.0,C310,Novo,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V104,2025-06-02 09:15:00,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,1,0.0,C415,Novo,VEND04,Daniel Martins,E-commerce,Online,PIX,Concluída
+V105,2025-06-02 13:45:10,CJ-SL-AZ-42,Calça Jeans Slim Azul 42,Vestuário Masculino,249.90,110.00,1,0.0,C520,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V106,2025-06-02 17:50:22,TN-CS-PR-41,Tênis Casual Preto 41,Calçados,219.90,105.00,1,0.0,C625,Novo,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V107,2025-06-03 11:00:55,CS-INV-CZ-G,Casaco de Inverno Cinza G,Vestuário Masculino,449.90,210.00,1,0.0,C730,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V108,2025-06-03 16:21:40,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C835,Novo,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V109,2025-06-04 12:12:12,CM-PL-BR-P,Camisa Polo Branca P,Vestuário Masculino,149.90,75.00,1,0.0,C940,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Cartão de Débito,Concluída
+V110,2025-06-04 18:30:00,VT-LN-AZ-M,Vestido de Lã Azul M,Vestuário Feminino,349.90,160.00,1,0.0,C101,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Devolvida
+V111,2025-06-05 10:05:10,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,2,0.1,C205,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,Dinheiro,Concluída
+V112,2025-06-05 15:20:30,TN-CS-PR-41,Tênis Casual Preto 41,Calçados,219.90,105.00,1,0.0,C310,Recorrente,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V113,2025-06-06 19:00:00,CS-INV-CZ-M,Casaco de Inverno Cinza M,Vestuário Masculino,449.90,210.00,1,0.0,C415,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V114,2025-06-06 20:10:45,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C520,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V115,2025-06-07 11:40:50,CJ-SL-AZ-42,Calça Jeans Slim Azul 42,Vestuário Masculino,249.90,110.00,1,0.0,C625,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,Dinheiro,Concluída
+V116,2025-06-07 14:15:00,CM-PL-BR-P,Camisa Polo Branca P,Vestuário Masculino,149.90,75.00,1,0.0,C730,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Cartão de Débito,Concluída
+V117,2025-06-08 16:30:00,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,1,0.0,C835,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V118,2025-06-09 10:10:10,CS-INV-CZ-P,Casaco de Inverno Cinza P,Vestuário Feminino,429.90,200.00,1,0.1,C940,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V119,2025-06-09 13:25:30,VT-LN-AZ-G,Vestido de Lã Azul G,Vestuário Feminino,349.90,160.00,1,0.0,C101,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,PIX,Concluída
+V120,2025-06-10 17:00:00,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.15,C205,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V121,2025-06-10 18:45:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,1,0.0,C310,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V122,2025-06-11 11:55:15,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,1,0.0,C415,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,Dinheiro,Concluída
+V123,2025-06-11 12:30:40,CS-INV-CZ-M,Casaco de Inverno Cinza M,Vestuário Masculino,449.90,210.00,1,0.0,C520,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V124,2025-06-11 14:00:00,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,2,0.2,C625,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V125,2025-06-11 16:20:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,1,0.0,C730,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V126,2025-06-12 10:00:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,1,0.0,C835,Novo,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V127,2025-06-12 10:30:15,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C940,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V128,2025-06-12 11:15:30,CS-INV-CZ-M,Casaco de Inverno Cinza M,Vestuário Masculino,449.90,210.00,1,0.0,C101,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V129,2025-06-12 13:45:50,VT-LN-AZ-P,Vestido de Lã Azul P,Vestuário Feminino,349.90,160.00,1,0.0,C205,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V130,2025-06-12 14:00:00,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,2,0.1,C310,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,Cartão de Crédito,Concluída
+V131,2025-06-12 15:30:20,TN-CS-PR-40,Tênis Casual Preto 40,Calçados,219.90,105.00,1,0.0,C415,Recorrente,VEND04,Daniel Martins,E-commerce,Online,PIX,Concluída
+V132,2025-06-13 10:20:10,CJ-SL-AZ-38,Calça Jeans Slim Azul 38,Vestuário Feminino,239.90,105.00,1,0.0,C520,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V133,2025-06-13 11:40:00,CM-PL-BR-G,Camisa Polo Branca G,Vestuário Masculino,149.90,75.00,1,0.0,C625,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,Dinheiro,Concluída
+V134,2025-06-13 14:05:00,CS-INV-CZ-G,Casaco de Inverno Cinza G,Vestuário Masculino,449.90,210.00,1,0.0,C730,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,PIX,Concluída
+V135,2025-06-14 09:30:00,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C835,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V136,2025-06-14 13:00:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,1,0.0,C940,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,PIX,Concluída
+V137,2025-06-15 15:10:45,TN-CS-PR-39,Tênis Casual Preto 39,Calçados,219.90,105.00,1,0.0,C101,Recorrente,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V138,2025-06-15 17:20:00,VT-LN-AZ-M,Vestido de Lã Azul M,Vestuário Feminino,349.90,160.00,1,0.0,C205,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,Dinheiro,Concluída
+V139,2025-06-16 10:55:30,CM-PL-BR-M,Camisa Polo Branca M,Vestuário Masculino,149.90,75.00,3,0.15,C310,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Cartão de Crédito,Concluída
+V140,2025-06-16 12:00:00,CS-INV-CZ-P,Casaco de Inverno Cinza P,Vestuário Feminino,429.90,200.00,1,0.0,C415,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Devolvida
+V141,2025-06-17 14:30:00,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,1,0.0,C520,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,Dinheiro,Concluída
+V142,2025-06-17 18:00:00,CJ-SL-AZ-40,Calça Jeans Slim Azul 40,Vestuário Masculino,249.90,110.00,1,0.0,C625,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V143,2025-06-18 10:10:10,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C730,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V144,2025-06-18 11:20:20,TN-CS-PR-42,Tênis Casual Preto 42,Calçados,219.90,105.00,1,0.0,C835,Recorrente,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V145,2025-06-19 15:00:00,CM-PL-BR-G,Camisa Polo Branca G,Vestuário Masculino,149.90,75.00,1,0.0,C940,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V146,2025-06-19 16:45:00,CS-INV-CZ-G,Casaco de Inverno Cinza G,Vestuário Masculino,449.90,210.00,1,0.0,C101,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V147,2025-06-20 17:30:30,VT-LN-AZ-G,Vestido de Lã Azul G,Vestuário Feminino,349.90,160.00,1,0.0,C205,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Cartão de Crédito,Concluída
+V148,2025-06-20 19:10:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,1,0.0,C310,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V149,2025-06-21 10:45:00,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,1,0.0,C415,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Dinheiro,Concluída
+V150,2025-06-21 11:55:00,CJ-SL-AZ-38,Calça Jeans Slim Azul 38,Vestuário Feminino,239.90,105.00,1,0.0,C520,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V151,2025-06-22 14:00:00,CM-PL-BR-M,Camisa Polo Branca M,Vestuário Masculino,149.90,75.00,1,0.0,C625,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,PIX,Concluída
+V152,2025-06-22 16:15:30,CS-INV-CZ-M,Casaco de Inverno Cinza M,Vestuário Masculino,449.90,210.00,1,0.0,C730,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V153,2025-06-23 18:00:00,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.05,C835,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V154,2025-06-23 19:30:00,TN-CS-PR-38,Tênis Casual Preto 38,Calçados,219.90,105.00,1,0.0,C940,Recorrente,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V155,2025-06-24 10:00:00,CM-PL-BR-G,Camisa Polo Branca G,Vestuário Masculino,149.90,75.00,2,0.1,C101,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V156,2025-06-24 11:20:15,CS-INV-CZ-G,Casaco de Inverno Cinza G,Vestuário Masculino,449.90,210.00,1,0.0,C205,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V157,2025-06-24 14:50:45,VT-LN-AZ-G,Vestido de Lã Azul G,Vestuário Feminino,349.90,160.00,1,0.0,C310,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Cartão de Crédito,Concluída
+V158,2025-06-25 17:00:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,1,0.0,C415,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V159,2025-06-25 18:30:00,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,1,0.0,C520,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Dinheiro,Concluída
+V160,2025-06-25 20:00:00,CJ-SL-AZ-38,Calça Jeans Slim Azul 38,Vestuário Feminino,239.90,105.00,1,0.0,C625,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Devolvida
+V161,2025-06-26 10:15:00,CM-PL-BR-M,Camisa Polo Branca M,Vestuário Masculino,149.90,75.00,1,0.0,C730,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,PIX,Concluída
+V162,2025-06-26 11:30:30,CS-INV-CZ-M,Casaco de Inverno Cinza M,Vestuário Masculino,449.90,210.00,1,0.0,C835,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V163,2025-06-26 14:00:00,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C940,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V164,2025-06-26 16:45:00,TN-CS-PR-38,Tênis Casual Preto 38,Calçados,219.90,105.00,1,0.0,C101,Recorrente,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V165,2025-06-27 10:00:00,CM-PL-BR-G,Camisa Polo Branca G,Vestuário Masculino,149.90,75.00,1,0.0,C205,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V166,2025-06-27 11:10:10,CS-INV-CZ-G,Casaco de Inverno Cinza G,Vestuário Masculino,449.90,210.00,1,0.0,C310,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V167,2025-06-27 13:40:50,VT-LN-AZ-G,Vestido de Lã Azul G,Vestuário Feminino,349.90,160.00,1,0.0,C415,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Cartão de Crédito,Concluída
+V168,2025-06-27 15:00:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,2,0.15,C520,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V169,2025-06-28 17:30:00,AC-LU-PR-U,Luva de Couro Preta,Acessórios,129.90,55.00,1,0.0,C625,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Dinheiro,Concluída
+V170,2025-06-28 18:45:00,CJ-SL-AZ-38,Calça Jeans Slim Azul 38,Vestuário Feminino,239.90,105.00,1,0.0,C730,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V171,2025-06-28 20:15:00,CM-PL-BR-M,Camisa Polo Branca M,Vestuário Masculino,149.90,75.00,1,0.0,C835,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,PIX,Concluída
+V172,2025-06-29 10:30:00,CS-INV-CZ-M,Casaco de Inverno Cinza M,Vestuário Masculino,449.90,210.00,1,0.0,C940,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V173,2025-06-29 11:45:30,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C101,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V174,2025-06-29 14:10:00,TN-CS-PR-38,Calçados,219.90,105.00,1,0.0,C205,Recorrente,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V175,2025-06-30 10:00:00,CM-PL-BR-G,Camisa Polo Branca G,Vestuário Masculino,149.90,75.00,1,0.0,C310,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V176,2025-06-30 12:30:00,CS-INV-CZ-G,Vestuário Masculino,449.90,210.00,1,0.0,C415,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V177,2025-06-30 15:00:00,VT-LN-AZ-G,Vestuário Feminino,349.90,160.00,1,0.0,C520,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Cartão de Crédito,Concluída
+V178,2025-06-30 17:45:00,AC-PT-DO-U,Acessórios,189.90,80.00,1,0.0,C625,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V179,2025-06-30 18:55:00,AC-LU-PR-U,Acessórios,129.90,55.00,1,0.0,C730,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Dinheiro,Concluída
+V180,2025-06-05 14:00:00,CM-SC-AZ-M,Camisa Social Azul M,Vestuário Masculino,199.90,95.00,1,0.0,C111,Novo,VEND01,Ana Pereira,Centro,Loja Física,PIX,Concluída
+V181,2025-06-08 15:00:00,CM-SC-AZ-M,Camisa Social Azul M,Vestuário Masculino,199.90,95.00,1,0.0,C222,Novo,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V182,2025-06-11 18:00:00,SP-ES-VM-39,Sapato Esportivo Vermelho 39,Calçados,279.90,130.00,1,0.0,C333,Novo,VEND04,Daniel Martins,E-commerce,Online,PIX,Concluída
+V183,2025-06-12 16:00:00,SP-ES-VM-39,Sapato Esportivo Vermelho 39,Calçados,279.90,130.00,1,0.1,C444,Novo,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V184,2025-06-15 14:30:00,CM-SC-AZ-G,Camisa Social Azul G,Vestuário Masculino,199.90,95.00,2,0.0,C555,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V185,2025-06-18 19:00:00,SP-ES-VM-40,Sapato Esportivo Vermelho 40,Calçados,279.90,130.00,1,0.0,C666,Novo,VEND04,Daniel Martins,E-commerce,Online,PIX,Concluída
+V186,2025-06-21 13:00:00,CM-SC-AZ-M,Camisa Social Azul M,Vestuário Masculino,199.90,95.00,1,0.0,C777,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V187,2025-06-24 16:00:00,SP-ES-VM-41,Sapato Esportivo Vermelho 41,Calçados,279.90,130.00,1,0.0,C888,Novo,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V188,2025-06-27 12:00:00,CM-SC-AZ-P,Camisa Social Azul P,Vestuário Masculino,199.90,95.00,1,0.0,C999,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V189,2025-06-30 18:00:00,SP-ES-VM-42,Sapato Esportivo Vermelho 42,Calçados,279.90,130.00,1,0.05,C112,Recorrente,VEND04,Daniel Martins,E-commerce,Online,PIX,Concluída
+V190,2025-06-10 15:00:00,ME-SC-PT-U,Meia Social Preta,Acessórios,39.90,15.00,5,0.1,C310,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V191,2025-06-11 19:00:00,ME-SC-PT-U,Meia Social Preta,Acessórios,39.90,15.00,10,0.15,C101,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Débito,Concluída
+V192,2025-06-12 18:00:00,ME-SC-PT-U,Meia Social Preta,Acessórios,39.90,15.00,3,0.0,C415,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,PIX,Concluída
+V193,2025-06-14 16:30:00,CJ-SL-AZ-40,Calça Jeans Slim Azul 40,Vestuário Masculino,249.90,110.00,1,0.0,C730,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V194,2025-06-16 11:00:00,VT-LN-AZ-P,Vestido de Lã Azul P,Vestuário Feminino,349.90,160.00,1,0.0,C940,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Dinheiro,Concluída
+V195,2025-06-18 14:00:00,CS-INV-CZ-P,Casaco de Inverno Cinza P,Vestuário Feminino,429.90,200.00,1,0.0,C205,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V196,2025-06-20 16:00:00,BL-CR-PR-U,Bolsa de Couro Preta,Acessórios,399.90,180.00,1,0.0,C625,Recorrente,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V197,2025-06-22 18:00:00,AC-PT-DO-U,Pulseira de Prata Dourada,Acessórios,189.90,80.00,1,0.0,C835,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,PIX,Concluída
+V198,2025-06-24 12:00:00,TN-CS-PR-40,Calçados,219.90,105.00,1,0.0,C101,Recorrente,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V199,2025-06-26 15:00:00,CJ-SL-AZ-42,Vestuário Masculino,249.90,110.00,1,0.0,C310,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Dinheiro,Concluída
+V200,2025-06-28 17:00:00,CM-PL-BR-P,Vestuário Masculino,149.90,75.00,1,0.0,C520,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,PIX,Concluída
+V201,2025-06-30 19:00:00,CS-INV-CZ-M,Vestuário Masculino,449.90,210.00,1,0.0,C730,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
+V202,2025-06-12 17:00:00,AC-PT-DO-U,Acessórios,189.90,80.00,1,0.1,C888,Novo,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V203,2025-06-12 17:05:00,ME-SC-PT-U,Acessórios,39.90,15.00,2,0.1,C888,Novo,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V204,2025-06-09 14:00:00,CM-SC-AZ-M,Vestuário Masculino,199.90,95.00,1,0.0,C999,Recorrente,VEND01,Ana Pereira,Centro,Loja Física,Dinheiro,Concluída
+V205,2025-06-11 16:30:00,SP-ES-VM-41,Calçados,279.90,130.00,1,0.0,C111,Novo,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V206,2025-06-13 18:00:00,CS-INV-CZ-G,Vestuário Masculino,449.90,210.00,1,0.0,C222,Novo,VEND03,Carlos Silva,Shopping Jaraguá,Loja Física,PIX,Concluída
+V207,2025-06-15 19:00:00,VT-LN-AZ-P,Vestuário Feminino,349.90,160.00,1,0.0,C333,Novo,VEND02,Beatriz Costa,Centro,Loja Física,Cartão de Crédito,Concluída
+V208,2025-06-17 12:45:00,BL-CR-PR-U,Acessórios,399.90,180.00,1,0.0,C444,Novo,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V209,2025-06-19 11:00:00,AC-PT-DO-U,Acessórios,189.90,80.00,1,0.0,C555,Recorrente,VEND03,Carlos Silva,Centro,Loja Física,Dinheiro,Concluída
+V210,2025-06-21 15:30:00,TN-CS-PR-39,Calçados,219.90,105.00,1,0.0,C666,Novo,VEND04,Daniel Martins,E-commerce,Online,Cartão de Crédito,Concluída
+V211,2025-06-23 17:00:00,CJ-SL-AZ-40,Vestuário Masculino,249.90,110.00,1,0.0,C777,Recorrente,VEND01,Ana Pereira,Shopping Jaraguá,Loja Física,PIX,Concluída
+V212,2025-06-25 19:30:00,CM-PL-BR-G,Vestuário Masculino,149.90,75.00,1,0.0,C888,Novo,VEND03,Carlos Silva,Centro,Loja Física,Cartão de Crédito,Concluída
+V213,2025-06-27 14:00:00,CS-INV-CZ-P,Vestuário Feminino,429.90,200.00,1,0.0,C999,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,PIX,Concluída
+V214,2025-06-29 16:00:00,VT-LN-AZ-M,Vestuário Feminino,349.90,160.00,1,0.0,C112,Recorrente,VEND02,Beatriz Costa,Centro,Loja Física,Dinheiro,Concluída
+V215,2025-06-30 20:00:00,BL-CR-PR-U,Acessórios,399.90,180.00,1,0.0,C111,Recorrente,VEND02,Beatriz Costa,Shopping Jaraguá,Loja Física,Cartão de Crédito,Concluída
