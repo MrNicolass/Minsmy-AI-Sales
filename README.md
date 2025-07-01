@@ -83,10 +83,10 @@ A arquitetura da solução segue o seguinte **fluxo**:
 
 Este projeto resolve um problema **real, urgente e comum** no mundo dos negócios:
 
-- ✅ **Economia de tempo**: De 8 horas para 5 minutos
-- ✅ **Análises consistentes e personalizadas**
-- ✅ **Integração moderna** entre Python e IA Generativa
-- ✅ **Fácil de adaptar** para marketing, financeiro, RH, etc.
+-  **Economia de tempo**: De 8 horas para 5 minutos
+-  **Análises consistentes e personalizadas**
+-  **Integração moderna** entre Python e IA Generativa
+-  **Fácil de adaptar** para marketing, financeiro, RH, etc.
 
 É uma solução **modular e escalável**, ideal tanto para uso interno quanto para evolução em produtos SaaS futuros.
 
