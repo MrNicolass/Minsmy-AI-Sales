@@ -1,99 +1,159 @@
-# Minsmy-AI-Sales
+# Minsmy-AI-Sales: Automated Sales Reporting with AI
 
-# Geração Automática de Relatórios de Vendas com IA
+## 1. Problem Statement
 
-## 1. Problema
+Sales managers, small business owners, and data analysts often spend hours every week or month collecting, analyzing, and transforming raw sales data into reports. The process is **manual, repetitive, prone to errors**, and does not scale effectively.
 
-Gerentes de vendas, donos de pequenas empresas e analistas de dados frequentemente gastam horas toda semana ou mês coletando, analisando e transformando dados brutos de vendas em relatórios. O processo é **manual, repetitivo, propenso a erros** e pouco escalável.
+### 1.1 Why It Matters & Who It Affects
 
-### 1.1 Por que é Importante e Quem Afeta
+This problem affects any professional who needs to make data-driven sales decisions. The slow pace of manual reporting delays critical choices, and flawed analyses can compromise business growth. Without adequate time or tools, professionals miss out on valuable opportunities.
 
-Este problema afeta qualquer profissional que precise tomar decisões baseadas em dados de vendas. A lentidão do processo atrasa decisões críticas, e análises mal feitas podem comprometer o crescimento do negócio. Sem tempo ou ferramentas adequadas, profissionais perdem oportunidades valiosas.
+### 1.2 The Problem in Action
 
-### 1.2 Problemática Exemplificada
-
-> Imagine a **Ana**, gerente de uma rede de lojas em Jaraguá do Sul. Toda primeira segunda-feira do mês, ela passa **o dia inteiro** no Excel. Calcula totais, filiais, produtos parados, melhores vendedores... No final, envia gráficos e números.  
+> Imagine **Ana**, the manager of a retail chain in Jaraguá do Sul, Brazil. On the first Monday of every month, she spends her **entire day** in Excel. She calculates totals, branch performance, stagnant products, top salespeople... At the end of the day, she sends out some charts and numbers.
 >
-> Mas não há tempo para investigar **por que a filial central vendeu 30% a mais do produto X**. Nosso projeto transforma esse trabalho de 8 horas em **5 minutos**, entregando um relatório com **análises e recomendações automáticas**, como se Ana tivesse um **assistente especialista** ao lado dela.
+> But there's no time to investigate **why the central branch sold 30% more of product X**. Our project transforms this 8-hour ordeal into a **5-minute process**, delivering a report with **automated analysis and recommendations**, as if Ana had an **expert assistant** by her side.
 
 ---
 
-## 2. Coleta ou Simulação de Dados
+## 2. Data Source
 
-Para fins de prototipagem e privacidade, os dados utilizados são **simulados**.
+For prototyping and privacy purposes, the data used in this project is **simulated**.
 
-### 2.1 Simulação e Premissas
+### 2.1 Simulation and Assumptions
 
-Utilizamos as bibliotecas **Python Faker** e **Pandas** para gerar um conjunto de dados fictícios, porém realistas, sobre vendas em múltiplas filiais, com vendedores, categorias e variações mensais.
+We use the **Python Faker** and **Pandas** libraries to generate a fictional yet realistic dataset covering sales across multiple branches, with different salespeople, categories, and monthly variations.
 
-### 2.2 Estrutura da Planilha
+### 2.2 Data Schema
 
-A planilha (`vendas.csv`) contém as seguintes colunas:
+The `sales.csv` spreadsheet must contain the following columns. The script is designed to handle this specific structure.
 
-| Campo          | Descrição                                      |
-|----------------|------------------------------------------------|
-| ID_Venda       | Identificador único da venda                   |
-| Data_Venda     | Data da transação (últimos 12 meses)           |
-| Produto        | Nome do produto                                |
-| Categoria      | Categoria do produto (ex: Roupa)               |
-| Valor_Unitario | Preço por unidade                              |
-| Quantidade     | Quantidade vendida                             |
-| Vendedor       | Nome do vendedor                               |
-| Filial         | Loja responsável pela venda                    |
-
----
-
-## 3. Implementação da Solução
-
-A arquitetura da solução segue o seguinte **fluxo**:
-
-**Planilha (CSV)** → [**Fase 1: Python/Pandas**] → [**Fase 2: IA (LLM)**] → [**Fase 3: Relatório PDF**]
-
-### Fase 1: Análise de Dados com Python
-
-- Leitura do arquivo `vendas.csv` com `pandas`
-- Cálculo de indicadores principais (KPIs):
-  - Receita total
-  - Receita por categoria
-  - Top 5 produtos (por receita e por volume)
-  - Desempenho por vendedor e filial
-  - Crescimento mês a mês
-- Geração de **gráficos** com `matplotlib` ou `seaborn`:
-  - Gráfico de barras por categoria
-  - Linha da receita mensal
-
-### Fase 2: Geração de Insights com IA
-
-- Envio dos KPIs e resumos para uma **IA generativa** (ex: [Gemini API](https://ai.google.dev))
-- Engenharia de prompt personalizada para criar um **relatório narrativo**
-- A resposta inclui análises, destaques, oportunidades e recomendações estratégicas
-
-### Fase 3: Compilação do Relatório (PDF)
-
-- A resposta da IA (em Markdown) é transformada em PDF com a biblioteca `fpdf2`
-- O relatório inclui:
-  - Título e seções bem formatadas
-  - Gráficos gerados na Fase 1
-  - Texto com insights e sugestões
-- Output final: `Relatorio_Vendas_Junho_2025.pdf`
+| Field | Description | Example |
+| :--- | :--- | :--- |
+| `ID_Venda` | Unique sale identifier | `1` |
+| `Data_Venda` | Transaction date (format: YYYY-MM-DD) | `2025-06-23` |
+| `Nome_Produto` | Name of the product sold | `Camisa Polo Branca M` |
+| `Categoria` | Product category | `Vestuário Masculino`|
+| `Tipo_Cliente` | Type of customer | `Novo Cliente` |
+| `Valor_Unitario`| Price per unit (use comma for decimals)| `120,50` |
+| `Custo_Unitario`| Production cost per unit (use comma) | `45,20` |
+| `Quantidade` | Quantity of units sold | `2` |
+| `Desconto_Aplicado_Percent`| Discount percentage (0.1 = 10%)| `0.1` |
+| `Nome_Vendedor` | Name of the salesperson | `Beatriz Costa` |
+| `Filial` | Store/branch responsible for the sale| `Filial Centro` |
+| `Metodo_Pagamento`| Payment method used | `Cartão de Crédito` |
+| `Canal_Venda` | Sales channel | `Física` or `Online` |
+| `Status_Venda` | Sale status | `Concluída` or `Devolvida`|
 
 ---
 
-## 4. Conclusão
+## 3. Setup and Execution
 
-Este projeto resolve um problema **real, urgente e comum** no mundo dos negócios:
+Follow these steps to set up and run the project on your local machine.
 
--  **Economia de tempo**: De 8 horas para 5 minutos
--  **Análises consistentes e personalizadas**
--  **Integração moderna** entre Python e IA Generativa
--  **Fácil de adaptar** para marketing, financeiro, RH, etc.
+### Step 1: Prerequisites
+- Ensure you have Python 3.8 or newer installed.
 
-É uma solução **modular e escalável**, ideal tanto para uso interno quanto para evolução em produtos SaaS futuros.
+### Step 2: Clone the Repository
+```bash
+git clone [https://github.com/MrNicolass/Minsmy-AI-Sales.git](https://github.com/MrNicolass/Minsmy-AI-Sales.git)
+cd Minsmy-AI-Sales
+```
 
-> Feito com ❤️ para tornar a análise de dados mais inteligente e humana.
+### Step 3: Set Up the Python Environment
+It is highly recommended to use a virtual environment to manage project dependencies.
 
-## Equipe
-A equipe envolvida neste projeto é constituída por alunos da 6ª Fase (20251) do curso de Engenharia de Software do Centro Universitário Católica SC de Jaraguá do Sul.
+```bash
+# Create a virtual environment
+python -m venv .venv
+
+# Activate it
+# On Windows:
+.venv\Scripts\activate
+# On macOS/Linux:
+source .venv/bin/activate
+```
+
+Now, install all the necessary libraries with a single command:
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Configure Environment Variables
+Create a file named `.env` in the root directory of the project. This file will securely store your API key.
+
+**`.env`**
+```
+GROQ_API_KEY="YOUR_GROQ_API_KEY_HERE"
+```
+Replace `YOUR_GROQ_API_KEY_HERE` with your actual API key from the [Groq Console](https://console.groq.com/keys).
+
+### Step 5: Prepare the Data File (`sales.csv`)
+You must create a file named `sales.csv` in the project's root directory, as the script will read data from it.
+
+- The file **must** use a semicolon (`;`) as the delimiter.
+- The file **must** contain all the columns listed in the [Data Schema](#22-data-schema) section.
+
+Here is an example of two rows to guide you:
+```csv
+ID_Venda;Data_Venda;Nome_Produto;Categoria;Tipo_Cliente;Valor_Unitario;Custo_Unitario;Quantidade;Desconto_Aplicado_Percent;Nome_Vendedor;Filial;Metodo_Pagamento;Canal_Venda;Status_Venda
+1;2025-06-15;Bolsa de Couro Preta;Acessórios;Cliente Frequente;350,00;120,00;1;0.05;Beatriz Costa;Filial Centro;Cartão de Crédito;Física;Concluída
+2;2025-06-15;Tênis Casual Preto 41;Calçados;Novo Cliente;289,90;95,50;1;0.0;Ana Pereira;Filial Norte;PIX;Online;Concluída
+```
+
+### Step 6: Run the Script
+With the environment activated and the `.env` and `sales.csv` files in place, simply run the main script from your terminal:
+
+```bash
+python main.py
+```
+The script will execute, generate all the charts and the final AI-powered report, and save them inside the `results/` directory.
+
+---
+
+## 4. Solution Implementation
+
+The solution's architecture follows this flow:
+
+**Spreadsheet (CSV)** → [**Phase 1: Python/Pandas**] → [**Phase 2: AI (LLM)**] → [**Phase 3: Markdown Report**]
+
+### Phase 1: Data Analysis with Python
+
+- Reads the `sales.csv` file using `pandas`.
+- Calculates key performance indicators (KPIs): total revenue, net profit, revenue by category, top products, and performance by salesperson.
+- Fetches real economic data (inflation and interest rates) from the **Central Bank of Brazil's API** using the `python-bcb` library.
+- Generates multiple charts with `matplotlib` to visualize all findings.
+
+### Phase 2: Insight Generation with AI
+
+- Sends the calculated KPIs and data summaries to a **Generative AI** (Llama 3 via Groq API).
+- Uses a highly detailed and structured prompt to instruct the AI to generate a **narrative report**.
+- The AI's response includes in-depth analysis, business diagnostics, individual salesperson feedback, and strategic recommendations.
+
+### Phase 3: Report Compilation
+
+- The AI's text-based response is received by the script.
+- A Python function assembles the final report by **programmatically injecting the generated charts** into the AI's narrative.
+- The final output is a **Markdown (`.md`) file**, which provides rich formatting and embeds the local images for a complete, visual, and portable report.
+
+---
+
+## 5. Conclusion
+
+This project solves a **real, urgent, and common** problem in the business world:
+
+-   **Time Savings**: Reduces an 8-hour task to under 5 minutes.
+-   **In-depth Analysis**: Provides consistent, personalized, and expert-level insights.
+-   **Modern Integration**: Seamlessly combines Python data analysis with Generative AI.
+-   **Adaptable**: Easy to adapt for other business areas like marketing, finance, or HR.
+
+It is a **modular and scalable** solution, ideal for both internal use and as a foundation for future SaaS products.
+
+> Made with ❤️ to make data analysis smarter and more human.
+
+## Team
+
+The team involved in this project consists of students from the 6th semester (2025/1) of the Software Engineering program at Centro Universitário Católica SC in Jaraguá do Sul.
 
 <div align="center">
 <table>
