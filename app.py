@@ -3,71 +3,51 @@ import pandas as pd
 from datetime import datetime
 from dotenv import load_dotenv
 import os
-
-# Importa as funções do nosso arquivo de lógica principal
 import main
 
-# --- Configuração da Página e Carregamento da API Key ---
-
-# Carrega as variáveis de ambiente do arquivo .env
+# Configuração da Página e Carregamento da API Key
 load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = os.getenv("GOOGLE_API_KEY")
 
 st.set_page_config(layout="wide")
-st.title("🤖 Analisador de Vendas com IA")
-st.markdown("Faça o upload da sua planilha de vendas em formato `.csv` para receber uma análise completa e recomendações estratégicas geradas por IA.")
+st.title("📈 Analisador Estratégico de Vendas com IA")
+st.markdown("Faça o upload da sua planilha de vendas (`.csv` com separador `;`) para receber um relatório completo com análises, gráficos e plano de ação.")
 
-# --- Interface Gráfica (Streamlit) ---
-
-# Instruções para o usuário
+# Interface Gráfica
 with st.expander("Clique aqui para ver o formato esperado da planilha"):
     st.markdown("""
-    Sua planilha deve conter, no mínimo, as seguintes colunas:
-    - `ID_Venda`, `Data_Hora_Venda`, `SKU`, `Nome_Produto`, `Categoria`
-    - `Valor_Unitario`, `Custo_Unitario`, `Quantidade`, `Desconto_Aplicado_Percent`
-    - `ID_Cliente`, `Tipo_Cliente`, `ID_Vendedor`, `Nome_Vendedor`
-    - `Filial`, `Canal_Venda`, `Metodo_Pagamento`, `Status_Venda`
-    
-    **Observação:** O separador de colunas deve ser o ponto e vírgula (`;`).
+    Sua planilha deve conter as colunas: `ID_Venda`, `Data_Hora_Venda`, `SKU`, `Nome_Produto`, `Categoria`, `Valor_Unitario`, `Custo_Unitario`, `Quantidade`, `Desconto_Aplicado_Percent`, `ID_Cliente`, `Tipo_Cliente`, `ID_Vendedor`, `Nome_Vendedor`, `Filial`, `Canal_Venda`, `Metodo_Pagamento`, `Status_Venda`.
+    **Observação:** O separador de colunas deve ser o **ponto e vírgula (;)**.
     """)
 
 uploaded_file = st.file_uploader("Carregue sua planilha de vendas (.csv)", type="csv")
 
 if uploaded_file is not None:
-    # Verifica se a chave da API foi carregada
-    if not GOOGLE_API_KEY or GOOGLE_API_KEY == "SUA_CHAVE_API_AQUI":
-        st.error("Chave da API do Google não encontrada. Por favor, configure seu arquivo .env.")
+    if not API_KEY or API_KEY == "SUA_CHAVE_API_AQUI":
+        st.error("Chave da API não encontrada. Por favor, configure seu arquivo .env com a chave correta.")
     else:
         try:
-            # Lê o arquivo CSV enviado pelo usuário, especificando o separador
             df = pd.read_csv(uploaded_file, sep=';')
-            
-            st.success("Planilha carregada com sucesso! Processando...")
+            st.success("Planilha carregada com sucesso! Iniciando análise completa...")
 
-            # Orquestra a execução das funções do main.py
-            with st.spinner('1/3 - Calculando indicadores e gerando gráficos...'):
-                kpis, caminhos_graficos = main.processar_dados_vendas(df.copy())
-            
-            with st.spinner('2/3 - A IA está analisando os dados e preparando as recomendações...'):
-                analise_ia = main.gerar_analise_ia(kpis, GOOGLE_API_KEY)
+            # Bloco único para processamento com spinner
+            with st.spinner('Analisando dados e gerando relatório completo... Por favor, aguarde.'):
+                # Chamada única para a função principal que faz todo o trabalho
+                analise_ia, pdf_bytes = main.gerar_relatorio_completo(df.copy(), API_KEY)
 
-            with st.spinner('3/3 - Montando o relatório em PDF...'):
-                pdf_bytes = main.criar_pdf(analise_ia, caminhos_graficos)
-
-            st.success("Relatório gerado com sucesso!")
+            st.success("Relatório Estratégico gerado com sucesso!")
             
-            # Exibe o botão de download para o usuário
             st.download_button(
-                label="Baixar Relatório em PDF",
+                label="📥 Baixar Relatório Completo em PDF",
                 data=pdf_bytes,
-                file_name=f"relatorio_vendas_{datetime.now().strftime('%Y%m%d')}.pdf",
+                file_name=f"relatorio_estrategico_{datetime.now().strftime('%Y%m%d')}.pdf",
                 mime="application/pdf"
             )
             
             st.markdown("---")
-            st.subheader("Análise Gerada pela IA:")
+            st.subheader("📄 Prévia da Análise Gerada pela IA:")
             st.markdown(analise_ia)
 
         except Exception as e:
-            st.error(f"Ocorreu um erro ao processar o arquivo: {e}")
-            st.error("Por favor, verifique se o arquivo está no formato correto e tente novamente.")
+            st.error(f"Ocorreu um erro crítico durante o processamento: {e}")
+            st.error("Por favor, verifique se a planilha segue o formato especificado e tente novamente.")
